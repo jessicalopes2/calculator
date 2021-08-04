@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Calculadora </title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../style2.css">
+<body>
+    <img src="calculadorakiria.png.png" width="400 px"> <br>
+
+    <input type="number" id="valor1" name="valor1" />
+    <input type="number" id="valor2" name="valor2" />
+    <br />
+    <label> Soma <input type="number" id="Soma" name="resultado" placeholder="Resultado Soma" 
+            readonly /></label> <br />
+    <label> Multiplicacao <input type="number" id="Multiplicacao" name="resultado" placeholder="Resultado Multiplicacao"
+            readonly /></label> <br />
+    <label> Divisao <input type="number" id="Divisao" name="resultado" placeholder="Resultado Divisao"
+            readonly /></label> <br />
+    <label> Subtracao <input type="number" id="Subtracao" name="resultado" placeholder="Resultado Subtracao"
+            readonly /></label> <br />
+
+
+    <button onClick="executar()"> Calcular </button>
+
+
+    <script>
+        function executar() {
+
+            let valor_1 = parseFloat(document.getElementById("valor1").value);
+            let valor_2 = parseFloat(document.getElementById("valor2").value);
+
+
+            let Soma = document.getElementById("Soma")
+            let Multiplicacao = document.getElementById("Multiplicacao")
+            let Divisao = document.getElementById("Divisao")
+            let Subtracao = document.getElementById("Subtracao")
+            Soma.value = (valor_1) + (valor_2)
+            Multiplicacao.value = (valor_1) * (valor_2)
+            Divisao.value = (valor_1) / (valor_2)
+            Subtracao.value = (valor_1) - (valor_2)
+
+
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>
