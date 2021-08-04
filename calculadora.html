@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="../style2.css">
 <body>
-    <img src="calculadorakiria.png.png" width="400 px"> <br>
+    <img src="calculadora.png" width="400 px"> <br>
 
     <input type="number" id="valor1" name="valor1" />
     <input type="number" id="valor2" name="valor2" />
@@ -24,16 +24,13 @@
     <label> Subtracao <input type="number" id="Subtracao" name="resultado" placeholder="Resultado Subtracao"
             readonly /></label> <br />
 
-
     <button onClick="executar()"> Calcular </button>
-
 
     <script>
         function executar() {
 
             let valor_1 = parseFloat(document.getElementById("valor1").value);
             let valor_2 = parseFloat(document.getElementById("valor2").value);
-
 
             let Soma = document.getElementById("Soma")
             let Multiplicacao = document.getElementById("Multiplicacao")
@@ -43,8 +40,6 @@
             Multiplicacao.value = (valor_1) * (valor_2)
             Divisao.value = (valor_1) / (valor_2)
             Subtracao.value = (valor_1) - (valor_2)
-
-
 
         }
 
