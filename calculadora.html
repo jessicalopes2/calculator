@@ -1,51 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora </title>
+        <link rel="stylesheet" type="text/css" href="style.css"/> 
+</head>
 
-    <title>Calculadora </title>
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="../style2.css">
 <body>
-    <img src="calculadora.png" width="400 px"> <br>
+<div class="container"> 
+        <div class="box"> 
+                
+               <h1>Calculadora Multicalc</h1>
+                
+        <div class="valores"> 
+        
+                <input type="number" id="valor1" placeholder="Valor 1" name="valor1" />
+                <input type="number" id="valor2" placeholder="Valor 2" name="valor2" />
+        
+        </div>
 
-    <input type="number" id="valor1" name="valor1" />
-    <input type="number" id="valor2" name="valor2" />
-    <br />
-    <label> Soma <input type="number" id="Soma" name="resultado" placeholder="Resultado Soma" 
-            readonly /></label> <br />
-    <label> Multiplicacao <input type="number" id="Multiplicacao" name="resultado" placeholder="Resultado Multiplicacao"
-            readonly /></label> <br />
-    <label> Divisao <input type="number" id="Divisao" name="resultado" placeholder="Resultado Divisao"
-            readonly /></label> <br />
-    <label> Subtracao <input type="number" id="Subtracao" name="resultado" placeholder="Resultado Subtracao"
-            readonly /></label> <br />
-
-    <button onClick="executar()"> Calcular </button>
-
-    <script>
-        function executar() {
-
-            let valor_1 = parseFloat(document.getElementById("valor1").value);
-            let valor_2 = parseFloat(document.getElementById("valor2").value);
-
-            let Soma = document.getElementById("Soma")
-            let Multiplicacao = document.getElementById("Multiplicacao")
-            let Divisao = document.getElementById("Divisao")
-            let Subtracao = document.getElementById("Subtracao")
-            Soma.value = (valor_1) + (valor_2)
-            Multiplicacao.value = (valor_1) * (valor_2)
-            Divisao.value = (valor_1) / (valor_2)
-            Subtracao.value = (valor_1) - (valor_2)
-
-        }
+        <div> 
+                <label> Soma <input type="number" id="Soma" name="resultado" placeholder="Resultado Soma" readonly /></label>
 
 
-    </script>
+                <label> Multiplicacao <input type="number" id="Multiplicacao" name="resultado" placeholder="Resultado Multiplicacao" readonly /></label>
+                
 
+
+
+                <label> Divisao <input type="number" id="Divisao" name="resultado" placeholder="Resultado Divisao" readonly /></label>
+
+
+
+                <label> Subtracao <input type="number" id="Subtracao" name="resultado" placeholder="Resultado Subtracao" readonly /></label>
+
+
+
+                <label> Porcentagem <input type="number" id="Porcentagem" name="resultado" placeholder="Resultado Porcentagem"readonly /></label>
+
+        </div>
+
+                <button onClick="executar()"> Calcular </button>
+
+
+   
+        </div>
+
+
+</div> 
+
+
+
+        <script src="main.js"></script>
 </body>
 
 </html>

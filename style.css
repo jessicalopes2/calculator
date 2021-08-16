@@ -1,0 +1,45 @@
+body{
+    margin: 0px;
+    
+}
+.container {
+width: 100vw;
+height: 100vh;
+background: #E0ABCA;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center
+}
+.box {
+width: 600px;
+height: 500px;
+background:#FEEBF6;
+border-radius:8px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 26.8889px;
+line-height: 32px;
+text-align: center;
+color: #000000;
+}
+.valores{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center
+}
+.valores input{
+width: 221px;
+height: 46px;
+margin-right: 30px;
+background: #FEEBF6;
+border: 2px solid #DB0080;
+box-sizing: border-box;
+border-radius:5px;
+}
