@@ -70,7 +70,7 @@ function executarCalculo() {
     Multiplicacao.value     = ( (valor_1)       *   (valor_2) );
     Divisao.value           = ( (valor_1)       /   (valor_2) );
     Subtracao.value         = ( (valor_1)       -   (valor_2) );
-    Porcentagem.value       = ( (valor_1)*100   /   (valor_2) );
+    Porcentagem.value       = ( (valor_1)       %   (valor_2) );
 
 }
 

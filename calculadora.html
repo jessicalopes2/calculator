@@ -6,55 +6,67 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Calculadora </title>
-        <link rel="stylesheet" type="text/css" href="style.css"/> 
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
 <body>
-<div class="container"> 
-        <div class="box"> 
-                
-               <h1>Calculadora Multicalc</h1>
-                
-        <div class="valores"> 
-        
-                <input type="number" id="valor1" placeholder="Valor 1" name="valor1" />
-                <input type="number" id="valor2" placeholder="Valor 2" name="valor2" />
-        
-        </div>
+        <div class="container">
+                <div class="box">
 
-        <div> 
-                <label> Soma <input type="number" id="Soma" name="resultado" placeholder="Resultado Soma" readonly /></label>
+                        <h1>Calculadora Multicalculo</h1>
 
+                        <div class="valores">
 
-                <label> Multiplicacao <input type="number" id="Multiplicacao" name="resultado" placeholder="Resultado Multiplicacao" readonly /></label>
-                
+                                <input type="number" id="valor1" placeholder="Valor 1" name="valor1" />
+                                <input type="number" id="valor2" placeholder="Valor 2" name="valor2" />
 
+                        </div>
 
+                        <div class="resposta">
 
-                <label> Divisao <input type="number" id="Divisao" name="resultado" placeholder="Resultado Divisao" readonly /></label>
+                                <label for="Soma"> Soma: </label>
+                                <input type="number" id="Soma" name="resultado" placeholder="Resultado Soma" readonly />
+                        </div>
 
+                        <div class="resposta">
+                                
+                                <label for="Multiplicação"> Multiplicação: </label>
+                                <input type="number" id="Multiplicacao" name="resultado"
+                                        placeholder="Resultado Multiplicacao" readonly />
+                        </div>
 
+                        <div class="resposta">
 
-                <label> Subtracao <input type="number" id="Subtracao" name="resultado" placeholder="Resultado Subtracao" readonly /></label>
+                                <label for="Divisão"> Divisão: </label>
+                                <input type="number" id="Divisao" name="resultado" placeholder="Resultado Divisao"
+                                        readonly />
 
+                        </div>
 
+                        <div class="resposta">
+                                <label for="Subtração"> Subtração: </label>
+                                <input type="number" id="Subtracao" name="resultado" placeholder="Resultado Subtracao"
+                                        readonly />
+                        </div>
 
-                <label> Porcentagem <input type="number" id="Porcentagem" name="resultado" placeholder="Resultado Porcentagem"readonly /></label>
+                        <div class="resposta">
 
-        </div>
+                                <label for="Porcentagem"> Porcentagem: </label>
+                                <input type="number" id="Porcentagem" name="resultado"
+                                        placeholder="Resultado Porcentagem" readonly />
 
-                <button onClick="executar()"> Calcular </button>
+                        </div>
 
+                        <div class="btn_executar">
+                         <button onClick="executarCalculo()"> Calcular </button>
+                        </div>
 
-   
-        </div>
+                </div>
 
-
-</div> 
-
-
-
-        <script src="main.js"></script>
+                <script src="main.js"></script>
 </body>
 
 </html>
